@@ -1,0 +1,24 @@
+{
+  "name": "Legend-Has-It",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krew801/Legend-Has-It.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krew801/Legend-Has-It/issues"
+  },
+  "homepage": "https://github.com/krew801/Legend-Has-It#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "express": "^4.17.1"
+  }
+}
