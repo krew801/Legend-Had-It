@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1",
+    "react": "^16.12.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,9 +24,5 @@
   "bugs": {
     "url": "https://github.com/krew801/Legend-Has-It/issues"
   },
-  "homepage": "https://github.com/krew801/Legend-Has-It#readme",
-  "dependencies": {
-    "bcrypt": "^3.0.7",
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/krew801/Legend-Has-It#readme"
 }
