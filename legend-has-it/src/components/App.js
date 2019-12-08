@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from './Nav';
-import About from './About';
+import Post from './Post';
 import Search from './Search';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -12,7 +12,7 @@ function App() {
       <Nav />
       <Switch>
       <Route path="/" exact component={Home}/>
-      <Route path="/about" component={About}/>
+      <Route path="/post" component={Post}/>
       <Route path="/search" component={Search}/>
       </Switch>
     </div>
