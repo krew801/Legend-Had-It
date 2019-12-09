@@ -17,6 +17,9 @@ function Nav() {
                <Link style={navStyle} to="/search">
                <li>Search</li>
                </Link>
+               <Link style={navStyle} to="/cheats">
+               <li>Cheats</li>
+               </Link>
            </ul>
        </nav>
     </div>

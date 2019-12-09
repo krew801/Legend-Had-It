@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './Nav';
 import Post from './Post';
 import Search from './Search';
+import Cheats from './Cheats';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" exact component={Home}/>
       <Route path="/post" component={Post}/>
       <Route path="/search" component={Search}/>
+      <Route path="/cheats" component={Cheats}/>
       </Switch>
     </div>
     </Router>
