@@ -12,10 +12,10 @@ function Nav() {
            <h3>Logo</h3>
            <ul className="nav-links">
              <Link style={navStyle} to="/post">
-               <li>Post</li>
+               <li>Post Your Path</li>
                </Link>
                <Link style={navStyle} to="/search">
-               <li>Search</li>
+               <li>Find Your Path</li>
                </Link>
                <Link style={navStyle} to="/cheats">
                <li>Cheats</li>

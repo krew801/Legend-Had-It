@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function Search() {
+  const [search, setSearch] = useState('');
 
-  useEffect(() => {
-    fetchItems();
-  }, []);
 
-  const fetchItems = async () => {
-    const data = await fetch('https://www.googleapis.com/youtube/v3/search/list')
+
+  const fetchItems = async (search) => {
+    const data = await fetch(`https://www.googleapis.com/youtube/v3/search/?part=${search}`
+    );
     const items = await data.json();
+    console.log(items)
   }
 
   return (
@@ -19,9 +20,9 @@ function Search() {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
       {/* <!-- The form --> */}
-      <form className="example" action="action_page.php">
-        <input type="text" placeholder="Find Your Path.." name="search" />
-        <button type="submit"><i class="fa fa-search"></i></button>
+      <form className="example" >
+        <input type="text" placeholder="Find Your Path.." name="search" onChange={ e => setSearch(e.target.value)}/>
+        <button type="submit" onClick={(e) => {e.preventDefault(); fetchItems(search);}}><i class="fa fa-search"></i></button>
       </form>
     </div>
   );
