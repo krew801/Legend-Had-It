@@ -9,7 +9,7 @@ function Nav() {
   return (
     <div className="Nav">
        <nav>
-           <h3>Logo</h3>
+           <h3>Home</h3>
            <ul className="nav-links">
              <Link style={navStyle} to="/post">
                <li>Post Your Path</li>

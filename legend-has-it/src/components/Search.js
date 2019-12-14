@@ -22,7 +22,7 @@ function Search() {
       {/* <!-- The form --> */}
       <form className="example" >
         <input type="text" placeholder="Find Your Path.." name="search" onChange={ e => setSearch(e.target.value)}/>
-        <button type="submit" onClick={(e) => {e.preventDefault(); fetchItems(search);}}><i class="fa fa-search"></i></button>
+        <button type="submit" onClick={(e) => {e.preventDefault(); fetchItems(search);}}><i className="fa fa-search"></i></button>
       </form>
     </div>
   );
