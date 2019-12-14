@@ -1,18 +1,24 @@
 {
-  "name": "Legend-Has-It",
+  "name": "legend-has-it",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "bcrypt": "^3.0.7",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.1",
-    "react": "^16.12.0",
-    "react-router-dom": "^5.1.2"
+    "express": "^4.17.1"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "nodemon": "^2.0.1"
   },
   "repository": {
     "type": "git",
