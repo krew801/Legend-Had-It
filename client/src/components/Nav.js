@@ -12,7 +12,7 @@ function Nav() {
            <h3>Home</h3>
            <ul className="nav-links">
                <Link style={navStyle} to="/FrontPage">
-               <li>Front Page</li>
+               <li>Welcome</li>
                </Link>
              <Link style={navStyle} to="/post">
                <li>Post Your Path</li>

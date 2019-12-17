@@ -10,7 +10,7 @@ class Login extends Component {
         }
          fetch({
              method: 'POST',
-             url: 'http://localhost:3000/confirmUser',
+             url: 'http://localhost:3000/index',
              body: data,
              crossDomain: true,
             //  success: result = () => {
@@ -21,15 +21,15 @@ class Login extends Component {
     }
 
 
-render() {
+render(){
     return (
-        <div>
+        <div className="login">
             <form onSubmit={this.confirmation.bind(this)} >
-                <label>
+                <label className="label">
                     Name:
                     <input type="text" ref = {node => this.loginName = node}/>
                 </label>
-                <label>
+                <label className="label">
                     Password:
                     <input type="text" ref = {node => this.loginPassword = node}/>
                 </label>
@@ -40,5 +40,6 @@ render() {
         )
     }
 }
+
 
 export default Login
