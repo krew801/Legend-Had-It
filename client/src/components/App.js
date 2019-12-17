@@ -3,7 +3,8 @@ import './App.css';
 import Nav from './Nav';
 import Post from './Post';
 import Search from './Search';
-import Cheats from './Cheats';
+import FrontPage from './FrontPage';
+import Login from './Login';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <Route path="/" exact component={Home}/>
       <Route path="/post" component={Post}/>
       <Route path="/search" component={Search}/>
-      <Route path="/cheats" component={Cheats}/>
+      <Route path="/FrontPage" component={FrontPage}/>
+      <Route path="/login" component={Login}/>
       </Switch>
     </div>
     </Router>

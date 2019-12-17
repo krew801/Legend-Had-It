@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 class Login extends Component {
     confirmation (e) {
@@ -7,15 +8,15 @@ class Login extends Component {
             'name': this.loginName.value,
             'password': this.loginPassword.value,
         }
-         $.ajax({
-             type: 'POST',
+         fetch({
+             method: 'POST',
              url: 'http://localhost:3000/confirmUser',
-             data: data,
+             body: data,
              crossDomain: true,
-             success: result = () => {
-                 console.log('result:', result)
-             },
-             error: err = () => {alert('Invalid Login Information')}
+            //  success: result = () => {
+            //      console.log('result:', result)
+            //  },
+            //  error: err = () => {alert('Invalid Login Information')}
          })
     }
 

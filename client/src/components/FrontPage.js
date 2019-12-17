@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-function Cheats() {
+function Login() {
   return (
     <div className="Cheat">
-        <h1>Videogame Cheats</h1>
+        <h1>Login</h1>
     </div>
   );
 }
 
-export default Cheats;
+export default Login;
