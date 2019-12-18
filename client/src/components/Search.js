@@ -3,11 +3,12 @@ import './App.css';
 
 function Search() {
   const [search, setSearch] = useState('');
+  
 
 
 
   const fetchItems = async (search) => {
-    const data = await fetch(`https://www.googleapis.com/youtube/v3/search/?part=${search}`
+    const data = await fetch(`https://www.googleapis.com/youtube/v3/videos?id=VIDEO_ID&key=AIzaSyBqQzJgdh01GMndWTupAVNzfeDWnOvBfJk&part=${search}`
     );
     const items = await data.json();
     console.log(items)
